@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {
+      background: hotpink;
+    }
+
+    .container {
+      width: 400px;
+      height: 100px;
+      background: papayawhip;
+      display: flex;
+      justify-content: space-between;
+      margin: 30px;
+      perspective: 100px;
+      position: relative;
+    }
+
+    .container:hover .box {
+      transform: rotateX(20deg) scale(1.5)
+    }
+
+    .box {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+
+    }
+
+    .box1 {
+      background: black;
+      transition: transform 500ms;
+    }
+
+    .box2 {
+      left: 150px;
+      background: white;
+      transition: transform 1s;
+    }
+
+    .box3 {
+      left: 300px;
+      background: black;
+      transition: transform 1.5s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+  </div>
+</body>
+
+</html>

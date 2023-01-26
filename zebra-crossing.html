@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {
+      background: hotpink;
+    }
+
+    .container {
+      width: 425px;
+      height: 150px;
+      /* background: black; */
+      display: flex;
+      justify-content: space-between;
+      margin: 50px auto;
+      perspective: 100px;
+      position: relative;
+    }
+
+    .container:hover .box {
+      transform: rotateX(20deg) scale(1.5)
+    }
+
+    .box {
+      position: absolute;
+      width: 50px;
+      height: 150px;
+
+    }
+
+    .box1 {
+      background: white;
+      left: -75px;
+      transition: transform 250ms;
+    }
+
+    .box2 {
+      background: black;
+      transition: transform 500ms;
+    }
+
+    .box3 {
+      left: 75px;
+      background: white;
+      transition: transform 1s;
+    }
+
+    .box4 {
+      left: 150px;
+      background: black;
+      transition: transform 1.5s;
+    }
+
+    .box5 {
+      left: 225px;
+      background: white;
+      transition: transform 2s;
+    }
+
+    .box6 {
+      left: 300px;
+      background: black;
+      transition: transform 2.25s;
+    }
+
+    .box7 {
+      left: 375px;
+      background: white;
+      transition: transform 2.5s;
+    }
+
+    .box8 {
+      left: 450px;
+      background: black;
+      transition: transform 2.75s
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <div class="box box6"></div>
+    <div class="box box7"></div>
+    <div class="box box8"></div>
+  </div>
+</body>
+
+</html>
